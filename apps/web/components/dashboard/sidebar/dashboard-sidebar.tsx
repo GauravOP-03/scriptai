@@ -158,7 +158,6 @@ export function DashboardSidebar({ collapsed, setCollapsed }: DashboardSidebarPr
 
   const links: ReadonlyArray<NavLink> = [
     { label: "Dashboard", icon: <HomeIcon className="h-4 w-4" />, variant: "default", href: "/dashboard" },
-      { label: "Channel Stats", icon: <BarChart2Icon className="h-4 w-4" />, variant: "ghost", href: "/dashboard/stats" },
     { label: "AI Studio", icon: <SparklesIcon className="h-4 w-4" />, variant: "ghost", href: "/dashboard/train" },
     { label: "Ideation", icon: <SearchIcon className="h-4 w-4" />, variant: "ghost", href: "/dashboard/research" },
     { label: "Scripts", icon: <FileTextIcon className="h-4 w-4" />, variant: "ghost", href: "/dashboard/scripts" },

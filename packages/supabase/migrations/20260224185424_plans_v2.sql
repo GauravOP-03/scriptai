@@ -8,7 +8,7 @@ add column "recent_videos" jsonb,
 add column "last_synced_at" timestamp with time zone,
 ADD COLUMN IF NOT EXISTS "last_used_at"     TIMESTAMPTZ,
 ADD COLUMN IF NOT EXISTS "usage_count"      INT NOT NULL DEFAULT 0,
-ADD COLUMN IF NOT EXISTS "usage_reset_date" DATE NOT NULL DEFAULT CURRENT_DATE
+ADD COLUMN IF NOT EXISTS "usage_reset_date" DATE NOT NULL DEFAULT CURRENT_DATE,
 ADD COLUMN "youtube_trained_videos" jsonb;
 
 

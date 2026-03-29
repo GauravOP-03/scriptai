@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Menu, LogOut, Settings, UserPlus, Coins } from "lucide-react";
+import { Menu, LogOut, Settings, UserPlus, Coins, BarChart2 } from "lucide-react";
 import { useSupabase } from "@/components/supabase-provider";
 import { toast } from "sonner";
 import { Separator } from "@/components/ui/separator";
@@ -109,6 +109,12 @@ export default function DashboardHeader({ sidebarCollapsed, setSidebarCollapsed 
 
               {/* Links Section */}
               <div className="p-2">
+                <Link href="/dashboard/stats">
+                  <Button variant="ghost" className="w-full justify-start gap-2 px-2">
+                    <BarChart2 className="h-4 w-4" />
+                    Channel Stats
+                  </Button>
+                </Link>
                 <Link href="/dashboard/settings">
                   <Button variant="ghost" className="w-full justify-start gap-2 px-2">
                     <Settings className="h-4 w-4" />
